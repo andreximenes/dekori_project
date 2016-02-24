@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<h3>Contato</h3>
+<hr/>
+
+<form class="form-horizontal" action="." method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <p><button type="submit" value="Enviar Formulario">Salvar</button></p>
+
+</form>
+
+<hr/>
+<h3>Relação de Contatos</h3>
+
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>e-mail</th>
+            <th>telefone</th>
+            <th>Mensagem</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for contato in contatos %}
+        <tr>
+            <td>{{ contato.id }}</td>
+            <td>{{ contato.nome }}</td>
+            <td>{{ contato.email }}</td>
+            <td>{{ contato.telefone }}</td>
+            <td>{{ contato.mensagem }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+
+{% endblock %}

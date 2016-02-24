@@ -1,0 +1,72 @@
+<style>
+body{margin-top:50px;}
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+</style>
+
+
+<div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+        <div class="panel-heading" style="background-color: darkorange">
+            <h4 class="panel-title" style="color: white">
+                <span>Produtos</span>
+            </h4>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a  href="{% url 'core.views.pagina_toalhas' %}" role="button">Toalhas</a>
+            </h4>
+        </div>
+{#        <div id="collapseThree" class="panel-collapse collapse">#}
+{#            <div class="panel-body">#}
+{#                <table class="table">#}
+{#                    <tr>#}
+{#                        <td>#}
+{#                            <a href="#">Bolos</a>#}
+{#                        </td>#}
+{#                    </tr>#}
+{#                    <tr>#}
+{#                        <td>#}
+{#                            <a href="#">Doces</a>#}
+{#                        </td>#}
+{#                    </tr>#}
+{#                    <tr>#}
+{#                        <td>#}
+{#                            <a href="#">Flores</a>#}
+{#                        </td>#}
+{#                    </tr>#}
+{#                </table>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="{% url 'core.views.pagina_passadeiras' %}">Passadeiras</a>
+            </h4>
+        </div>
+    </div>
+
+     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="{% url 'core.views.pagina_suportes' %}">Suportes</a>
+            </h4>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default" title="Sousplat, Guardanapos e Porta guardanapos">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a title="Sousplat, Guardanapos e Porta guardanapos" href="{% url 'core.views.pagina_acessorios' %}">Acessórios</a>
+            </h4>
+        </div>
+    </div>
+
+</div>

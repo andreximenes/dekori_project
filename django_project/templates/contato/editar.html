@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<h3>Edição de Contato</h3>
+<hr/>
+
+<form class="form-horizontal" action="." method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <p><button type="submit" value="Enviar Formulario">Salvar Alterações</button></p>
+
+</form>
+
+
+{% endblock %}

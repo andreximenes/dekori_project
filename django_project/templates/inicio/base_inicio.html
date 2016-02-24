@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="André Luiz Ximenes">
+    <link rel="shortcut icon" href="../../media/dekori_favicon.png"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css.map" rel="stylesheet">
+{#    <link href="../../media/static/css/bootstrap.min.map" rel="stylesheet">#}
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-image: url("../../media/background32.png");
+            background-repeat: repeat-y repeat-x;
+        }
+        .shadow {
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+    <style>
+        {# {% block estilo %} {% endblock %}} #}
+    </style>
+
+
+    <title>Dekori  - Locações de Acessórios</title>
+</head>
+<body>
+    <div class="container shadow" style="background-color:white">
+        <div class="container">
+            <br/>
+            <img src="../../media/dekori_logo.png" alt="dekori logo" align="center"/>
+
+        </div>
+        <div class="row">
+{#            {% include 'inicio/index_welcome.html' %}#}
+            {% block carousel %} {% endblock %}
+        </div>
+
+        {# footer #}
+        {% include 'base/footer.html' %}
+
+    </div>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="//v2.zopim.com/?3HVsbIYp6MZSBhUYaOUu1HaluCQHzl37";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+</body>
+</html>

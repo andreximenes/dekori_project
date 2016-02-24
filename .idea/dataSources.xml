@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="160418164">
+    <data-source source="LOCAL" name="Django default" uuid="064c40b1-3d86-4ac8-ab0b-f86552802250">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/dekori</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+# eu que fiz
+import os.path
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -23,6 +26,13 @@ SECRET_KEY = 'fj2T6XImnXPLB0vsAcwckMt3O2118HGBZw35FPM84RlLdJwbJF'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+
+TEMPLATE_DIRS = (
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_PATH, 'templates'),
+)
 
 ALLOWED_HOSTS = []
 
@@ -36,6 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,27 +68,24 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': 'u8tHLlSCCw',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'dekori'),
     }
 }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Recife'
 
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
+
 
 
 # Static files (CSS, JavaScript, Images)
