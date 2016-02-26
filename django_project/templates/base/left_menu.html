@@ -4,6 +4,7 @@ body{margin-top:50px;}
 .panel-body { padding:0px; }
 .panel-body table tr td { padding-left: 15px }
 .panel-body .table {margin-bottom: 0px; }
+.panel-title {color: black}
 </style>
 
 
@@ -17,11 +18,13 @@ body{margin-top:50px;}
     </div>
 
     <div class="panel panel-default">
+        <a  href="/dekori/toalhas" role="button">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a  href="{% url 'core.views.pagina_toalhas' %}" role="button">Toalhas</a>
+                Toalhas
             </h4>
         </div>
+        </a>
 {#        <div id="collapseThree" class="panel-collapse collapse">#}
 {#            <div class="panel-body">#}
 {#                <table class="table">#}
@@ -45,28 +48,34 @@ body{margin-top:50px;}
 {#        </div>#}
     </div>
     <div class="panel panel-default">
+        <a href="/dekori/passadeiras">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a href="{% url 'core.views.pagina_passadeiras' %}">Passadeiras</a>
+                Passadeiras
             </h4>
         </div>
+        </a>
     </div>
 
      <div class="panel panel-default">
-        <div class="panel-heading">
+        <a href="/dekori/suportes">
+         <div class="panel-heading">
             <h4 class="panel-title">
-                <a href="{% url 'core.views.pagina_suportes' %}">Suportes</a>
+                Suportes
             </h4>
         </div>
+        </a>
     </div>
 
 
     <div class="panel panel-default" title="Sousplat, Guardanapos e Porta guardanapos">
+        <a href="/dekori/acessorios">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a title="Sousplat, Guardanapos e Porta guardanapos" href="{% url 'core.views.pagina_acessorios' %}">Acessórios</a>
+                Acessórios
             </h4>
         </div>
+        </a>
     </div>
 
 </div>

@@ -14,11 +14,8 @@ urlpatterns = patterns('',
     url(r'^$', 'core.views.index', name='index'),
     # INDEX SITE
     url(r'^dekori$', 'core.views.site', name='produtos'),
-    url(r'^dekori/toalhas', 'core.views.pagina_toalhas', name='toalhas'),
-    url(r'^dekori/passadeiras', 'core.views.pagina_passadeiras', name='passadeiras'),
-    url(r'^dekori/suportes', 'core.views.pagina_suportes', name='suportes'),
-    url(r'^dekori/acessorios', 'core.views.pagina_acessorios', name='acessorios'),
     url(r'^dekori/sobre', 'core.views.sobre', name='sobre'),
+    url(r'^dekori/(?P<opcao_menu>\w+)', 'core.views.menu', name='menu'),
 )
 
 if settings.DEBUG:

@@ -3,8 +3,10 @@
   <component name="DataSourceManagerImpl" format="xml" hash="160418164">
     <data-source source="LOCAL" name="Django default" uuid="064c40b1-3d86-4ac8-ab0b-f86552802250">
       <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/dekori</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/dekori</jdbc-url>
+      <user-name>django</user-name>
+      <user-password>dfdfdf92dfdedfe2dfe6dfc6dff9dfe9dfe9dfdd</user-password>
       <libraries />
     </data-source>
   </component>

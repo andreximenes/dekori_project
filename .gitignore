@@ -1,0 +1,6 @@
+*.sqlite3
+/produtos
+core/migrations/
+core/migrations/__init__.pyc
+
+core/migrations/0001_initial.pyc
