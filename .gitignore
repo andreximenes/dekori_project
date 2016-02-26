@@ -2,5 +2,11 @@
 /produtos
 core/migrations/
 core/migrations/__init__.pyc
-
+README.md
 core/migrations/0001_initial.pyc
+*.png
+*.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
